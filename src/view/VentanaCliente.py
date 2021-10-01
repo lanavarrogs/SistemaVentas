@@ -7,10 +7,9 @@ from controllers.cliente_controller import get_clientes,set_clientes,total_clien
 
 
 class VentanaCliente:
-    def __init__(self,root,frame) -> None:
+    def __init__(self,root) -> None:
         self.root =  root
         self.root.title('Ventana Cliente')
-        self.old_frame=frame
         self.set_window()
         clients = []
 
