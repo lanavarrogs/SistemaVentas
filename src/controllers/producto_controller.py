@@ -43,7 +43,7 @@ def set_productos(trabajador):
     
         db = stablish_connection()
         cursor = db.cursor()
-        query = f'INSERT INTO cliente VALUES(%s,%s,%s)'
+        query = f'INSERT INTO producto VALUES(%s,%s,%s)'
         values = (id,nombre,precio)
         cursor.execute(query,values)
         
@@ -52,13 +52,11 @@ def set_productos(trabajador):
         print("El usuario no se agrego")
 
     
-
-
-
-def total_trabajadores():
+def total_productos():
     db = stablish_connection()
     cursor = db.cursor()
-    query = 'SELECT COUNT(id_cliente) as total FROM cliente'
+    query = 'SELECT COUNT(id_producto) as total FROM producto'
     cursor.execute(query)
     total = cursor.fetchone()
     return (int(total[0]))
+

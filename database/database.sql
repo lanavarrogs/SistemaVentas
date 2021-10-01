@@ -51,3 +51,5 @@ INSERT INTO trabajador VALUES(3,'allison','allison@gmail.com',24,'55295627','Dir
 INSERT INTO producto VALUES(1,'Tablaroca',150.10);
 INSERT INTO producto VALUES(2,'Cemento',.350.00);
 INSERT INTO producto VALUES(3,'Pala premium',1600.00);
+
+INSERT INTO ventas VALUES(1,'comprado',350.00,'Reforma',1,1,1)
